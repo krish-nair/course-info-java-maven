@@ -12,7 +12,7 @@ import static java.util.function.Predicate.not;
 public class CourseRetriever {
     private static final Logger LOG = LoggerFactory.getLogger(CourseRetriever.class);
     public static void main(String... args) {
-        LOG.info("Course retriever starting...");
+        LOG.info("com.pluralsight.courseinfo.domain.Course retriever starting...");
         if (args.length == 0){
             LOG.warn("Please provide author name as first argument.");
             return;
@@ -22,7 +22,7 @@ public class CourseRetriever {
 
             // Java record benefits demo
 //            PluralsightCourse course = new PluralsightCourse("id", "title", "04:30", "http://", false );
-//            LOG.info("Course details are as: {}", course);
+//            LOG.info("com.pluralsight.courseinfo.domain.Course details are as: {}", course);
         }catch (Exception e){
             LOG.error(  "Unexpected error", e);
         }
