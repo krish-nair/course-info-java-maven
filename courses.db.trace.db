@@ -1,0 +1,5 @@
+2024-07-29 16:09:18.900955+12:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COURSED" not found; SQL statement:
+MERGE INTO Coursed (id, name, length, url)
+VALUES (?, ?, ?, ?)
+ [42102-230]
