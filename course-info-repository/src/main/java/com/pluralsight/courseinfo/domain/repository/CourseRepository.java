@@ -1,4 +1,4 @@
-package com.pluralsight.courseinfo.repository;
+package com.pluralsight.courseinfo.domain.repository;
 
 import com.pluralsight.courseinfo.domain.Course;
 
