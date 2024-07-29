@@ -1,13 +1,16 @@
 package com.pluralsight.courseinfo.domain;
 
-public record Course(String id, String name, long length, String url) {
+import java.util.Optional;
+
+public record Course(String id, String name, long length, String url, Optional<String> notes) {
     public Course {
         filled(id);
         filled(name);
         filled(url);
+        notes.ifPresent(Course::filled);
     }
 
-    private void filled(String s) {
+    private static void filled(String s) {
         if (s == null || s.isBlank()){
             throw new IllegalArgumentException("No value present!");
         }
